@@ -3,7 +3,7 @@
     {
       "text": "print(s\"\"\"%html\n<center>\n    <h1><a href=\"http://diplodatos.famaf.unc.edu.ar/\">Diplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones</a></h1>\n    <h2>Curso <a href=\"https://sites.google.com/view/eleccion-optativas-diplodatos/programaci%C3%B3n-distribu%C3%ADda-sobre-grandes-vol%C3%BAmenes-de-datos\">Programación Distribuida sobre Grandes Volúmenes de Datos</a></h2>\n</center>\n\n<br>\n\n<h3 style=\"text-align:center;\"> Damián Barsotti  </h3>\n\n<h3 style=\"text-align:center;\">\n    <a href=\"http://www.famaf.unc.edu.ar\">\n    Facultad de Matemática Astronomía Física y Computación\n    </a>\n<br/>\n    <a href=\"http://www.unc.edu.ar\">\n    Universidad Nacional de Córdoba\n    </a>\n<br/>\n    <center>\n    <a href=\"http://www.famaf.unc.edu.ar\">\n    <img src=\"$baseDir/comun/logo%20UNC%20FAMAF%202016.png\" alt=\"Drawing\" style=\"width:50%;\"/>\n    </a>\n    </center>\n</h3>\n\n<p style=\"font-size:15px;\">\n    <br />\n        This work is licensed under a\n        <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.\n    <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">\n        <img alt=\"Creative Commons License\" style=\"border-width:0;vertical-align:middle;float:right\" src=\"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png\" />\n    </a>\n</p>\n\"\"\")\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -44,18 +44,18 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342920_816116161",
+      "jobName": "paragraph_1668369843296_1421743443",
       "id": "20161011-125025_834797080",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
       "focus": true,
-      "$$hashKey": "object:12411"
+      "$$hashKey": "object:384"
     },
     {
       "title": "",
       "text": "%md\n### Antes de comenzar\n#### En máquina virtual\n1. Lanzar terminal\n1. Actualizar repo:\n```sh\ncd diplodatos_bigdata\ngit pull\n```\n1. Lanzar [Zeppelin](http://zeppelin.apache.org/) en docker:\n```sh\n./docker/zeppelin.sh\n```\n1. En navegador abrir [http://localhost:8080](http://localhost:8080)\n1. Seleccionar `Import note`\n1. Elegir json en `diplodatos_bigdata/clases/03_sql/note.zpln`\n2. Seleccionar `Clase 03 - SQL`\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -88,16 +88,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342920_1730774391",
+      "jobName": "paragraph_1668369843297_641154361",
       "id": "20171024-161854_528178880",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12412"
+      "$$hashKey": "object:385"
     },
     {
       "text": "%md\n# Datasets/Dataframes\n\n* Spark permite interactuar con datos estructurados (Bases de Datos tabulares) o semiestructurados (JSON) con su componente **Spark SQL**.\n* Sus interfaces son **SQL** y **Dataframe/Dataset** API .\n    - Programática, parecida a [Python Pandas dataframes](http://pandas.pydata.org/pandas-docs/stable/dsintro.html).\n    - Demasiado parecida. Ver [Koalas](https://github.com/databricks/koalas).\n* La API Dataset es tipada y solo existe para Scala y Java.\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -141,16 +141,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342920_116957566",
+      "jobName": "paragraph_1668369843297_87770501",
       "id": "20161011-125142_1705237118",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12413"
+      "$$hashKey": "object:386"
     },
     {
       "text": "print(s\"\"\"%html\n&nbsp;\n<img src=\"$baseDir/03_sql/unified_stack.png\" alt=\"Drawing\" style=\"width: 100%;\"/>\n\"\"\")\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -191,17 +191,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342920_2056656231",
+      "jobName": "paragraph_1668369843297_1302443057",
       "id": "20161011-132101_236091967",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12414"
+      "$$hashKey": "object:387"
     },
     {
       "title": "API 2.x.x unificada",
       "text": "print(s\"\"\"%html\n&nbsp;\n<img src=\"$baseDir/03_sql/dataset_dataframe_unificado.png\" alt=\"Drawing\" style=\"width: 100%;\"/>\n\"\"\")\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -243,16 +243,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342920_1429659982",
+      "jobName": "paragraph_1668369843297_1356972042",
       "id": "20161011-134614_1124280099",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12415"
+      "$$hashKey": "object:388"
     },
     {
       "text": "%md\n### SparkSession\n\n* Para acceder al cluster desde la API se utiliza `SparkSession`.\n* El `SparkContext` deriva de él.\n\n```python\nfrom pyspark.sql import SparkSession\n\nspark = SparkSession \\\n    .builder \\\n    .appName(\"Python Spark ejemplo\") \\\n    .config(\"spark.some.config.option\", \"algun-valor\") \\\n    .getOrCreate()\n    \nsc = spark.sparkContext\n\n```\n\n* En Zeppelin ya están predefinidos: \n  - `SparkSession` objeto `spark` \n  - `SparkContext` objeto `sc`\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -296,16 +296,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_1273171339",
+      "jobName": "paragraph_1668369843297_840015779",
       "id": "20161011-174856_51715674",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12416"
+      "$$hashKey": "object:389"
     },
     {
       "text": "%md\n### Lectura de datos\n\n#### Estructurados y semiestructurados\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -336,16 +336,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_1056159922",
+      "jobName": "paragraph_1668369843297_1124804246",
       "id": "20171020-102828_1480663464",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12417"
+      "$$hashKey": "object:390"
     },
     {
       "text": "%md\n\n#### Formatos:\n\n* json\n* csv\n* parquet\n* orc\n* libsvm\n* text\n* ...\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -376,16 +376,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_271472522",
+      "jobName": "paragraph_1668369843297_361965210",
       "id": "20171019-163121_1592075078",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12418"
+      "$$hashKey": "object:391"
     },
     {
       "text": "%md\n#### Fuentes de datos:\n\n* Archivos en fs local o distribuid (ej hdfs)\n* jdbc (posgress, oracle, mysql,...)\n* Apache Hive (se usa execution backend Spark en ves de MR)\n* Amazon Redshift, S3\n* Azure Storage Services\n* Cassandra\n* MongoDB\n* Neo4j\n* ...",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -417,16 +417,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_819818053",
+      "jobName": "paragraph_1668369843297_1796703312",
       "id": "20171020-102923_1888981134",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12419"
+      "$$hashKey": "object:392"
     },
     {
       "text": "%md\n### Ejemplo\n\n#### Tabla de perfiles [last.fm](last.fm)\n\nFormato:\n\n    id \\t gender ('m'|'f'|empty) \\t age (int|empty) \\t country (str|empty) \\t registered (date|empty)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -457,16 +457,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_117172043",
+      "jobName": "paragraph_1668369843297_427145149",
       "id": "20171020-170028_1956391103",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12420"
+      "$$hashKey": "object:393"
     },
     {
-      "text": "%sh\nhead /home/david/diplodatos_bigdata/ds/userid-profile.tsv\n",
+      "text": "%sh\nhead ../../diplodatos_bigdata/ds/userid-profile.tsv\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:31:37-0300",
+      "dateUpdated": "2022-11-13T17:05:08-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -496,19 +496,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_2059135670",
+      "jobName": "paragraph_1668369843297_2086731868",
       "id": "20181011-192611_2092112872",
-      "dateCreated": "2022-11-07T16:29:02-0300",
-      "status": "FINISHED",
-      "$$hashKey": "object:12421",
-      "dateFinished": "2022-11-07T16:31:37-0300",
-      "dateStarted": "2022-11-07T16:31:37-0300"
+      "dateCreated": "2022-11-13T17:04:03-0300",
+      "status": "READY",
+      "$$hashKey": "object:394"
     },
     {
       "title": "Lectura",
       "text": "%pyspark\n\nprofiles = spark.read.load(\"../../diplodatos_bigdata/ds/userid-profile.tsv\",\n                    format=\"csv\", delimiter=\"\\t\", header=True, inferSchema=True)\n                    \n# Ver en schema siguiente si inferSchema=False\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:40:22-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -533,39 +531,19 @@
         "msg": []
       },
       "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "SPARK JOB",
-          "tooltip": "View in Spark web UI",
-          "group": "spark",
-          "values": [
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=15",
-              "$$hashKey": "object:19895"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=16",
-              "$$hashKey": "object:19896"
-            }
-          ],
-          "interpreterSettingId": "spark"
-        }
-      },
+      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_475126280",
+      "jobName": "paragraph_1668369843297_79947562",
       "id": "20171019-160931_1102056402",
-      "dateCreated": "2022-11-07T16:29:02-0300",
-      "status": "FINISHED",
-      "$$hashKey": "object:12422",
-      "dateFinished": "2022-11-07T16:32:01-0300",
-      "dateStarted": "2022-11-07T16:31:58-0300"
+      "dateCreated": "2022-11-13T17:04:03-0300",
+      "status": "READY",
+      "$$hashKey": "object:395"
     },
     {
       "title": "Esquema",
       "text": "%pyspark\n\nprofiles.printSchema()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:32:09-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -598,19 +576,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_1452584203",
+      "jobName": "paragraph_1668369843297_818457222",
       "id": "20171020-165528_926197483",
-      "dateCreated": "2022-11-07T16:29:02-0300",
-      "status": "FINISHED",
-      "$$hashKey": "object:12423",
-      "dateFinished": "2022-11-07T16:32:10-0300",
-      "dateStarted": "2022-11-07T16:32:09-0300"
+      "dateCreated": "2022-11-13T17:04:03-0300",
+      "status": "READY",
+      "$$hashKey": "object:396"
     },
     {
       "title": "Ver el contenido",
       "text": "%pyspark\n\nprofiles.show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:32:14-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -640,35 +616,19 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "SPARK JOB",
-          "tooltip": "View in Spark web UI",
-          "group": "spark",
-          "values": [
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=17",
-              "$$hashKey": "object:18065"
-            }
-          ],
-          "interpreterSettingId": "spark"
-        }
-      },
+      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_922111154",
+      "jobName": "paragraph_1668369843297_276175481",
       "id": "20191126-024041_1950604952",
-      "dateCreated": "2022-11-07T16:29:02-0300",
-      "status": "FINISHED",
-      "$$hashKey": "object:12424",
-      "dateFinished": "2022-11-07T16:32:14-0300",
-      "dateStarted": "2022-11-07T16:32:14-0300"
+      "dateCreated": "2022-11-13T17:04:03-0300",
+      "status": "READY",
+      "$$hashKey": "object:397"
     },
     {
       "title": "Tambien se puede ver con Zeppelin",
       "text": "%pyspark\n\nz.show(profiles.limit(20)) # limit(n) devuelve solo las primeras n filas \n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:32:19-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -764,35 +724,19 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "SPARK JOB",
-          "tooltip": "View in Spark web UI",
-          "group": "spark",
-          "values": [
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=18",
-              "$$hashKey": "object:18218"
-            }
-          ],
-          "interpreterSettingId": "spark"
-        }
-      },
+      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_987950796",
+      "jobName": "paragraph_1668369843297_1751524815",
       "id": "20191126-023810_382641811",
-      "dateCreated": "2022-11-07T16:29:02-0300",
-      "status": "FINISHED",
-      "$$hashKey": "object:12425",
-      "dateFinished": "2022-11-07T16:32:19-0300",
-      "dateStarted": "2022-11-07T16:32:19-0300"
+      "dateCreated": "2022-11-13T17:04:03-0300",
+      "status": "READY",
+      "$$hashKey": "object:398"
     },
     {
       "title": "Query SQL plano",
       "text": "%pyspark\n\nprofiles.createOrReplaceTempView(\"users\")\n\n#Cantidad de usuarios por país\nnUsr4Ctry = spark.sql(\"SELECT country, count(*) AS cantidad FROM users GROUP BY country ORDER BY cantidad DESC\")\n\nnUsr4Ctry.show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:32:33-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -822,35 +766,19 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "SPARK JOB",
-          "tooltip": "View in Spark web UI",
-          "group": "spark",
-          "values": [
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=19",
-              "$$hashKey": "object:19242"
-            }
-          ],
-          "interpreterSettingId": "spark"
-        }
-      },
+      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_199435315",
+      "jobName": "paragraph_1668369843297_2082181636",
       "id": "20171020-195004_405222821",
-      "dateCreated": "2022-11-07T16:29:02-0300",
-      "status": "FINISHED",
-      "$$hashKey": "object:12426",
-      "dateFinished": "2022-11-07T16:32:40-0300",
-      "dateStarted": "2022-11-07T16:32:33-0300"
+      "dateCreated": "2022-11-13T17:04:03-0300",
+      "status": "READY",
+      "$$hashKey": "object:399"
     },
     {
       "title": "Query SQL programático",
       "text": "%pyspark\n\nfrom pyspark.sql.functions import count\n\nnUsr4Ctry2 = profiles \\\n                .groupBy(\"country\").agg(count(\"*\").alias(\"cantidad\")) \\\n                .orderBy(\"cantidad\", ascending=False)\n# Cada operación SQL es un método\n\nnUsr4Ctry2.show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -882,17 +810,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342921_1542120973",
+      "jobName": "paragraph_1668369843297_1075035464",
       "id": "20171020-181216_461915575",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12427"
+      "$$hashKey": "object:400"
     },
     {
       "title": "Ejercicio",
       "text": "%md\nComplete los siguientes programas que calculan en un Dataframe la cantidad de usuarios por pais desagregando por sexo y ordenando por la cantidad de mayor a menor, usando **SQL plano y programático**.\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -925,16 +853,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_152436771",
+      "jobName": "paragraph_1668369843297_161783022",
       "id": "20171023-114452_748688701",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12428"
+      "$$hashKey": "object:401"
     },
     {
       "text": "%pyspark    #Ver error\n\n# Con SQL plano\nprofiles.createOrReplaceTempView(\"users\")\n\nnUsr4CtryGen = spark.sql(\"SELECT country, gender, count(*) AS cantidad_usuarios FROM users GROUP BY country, gender ORDER BY cantidad_usuarios DESC\")\n\nnUsr4CtryGen.show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:33:28-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -964,34 +892,18 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "SPARK JOB",
-          "tooltip": "View in Spark web UI",
-          "group": "spark",
-          "values": [
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=20",
-              "$$hashKey": "object:19312"
-            }
-          ],
-          "interpreterSettingId": "spark"
-        }
-      },
+      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_449786995",
+      "jobName": "paragraph_1668369843297_946380397",
       "id": "20191126-025015_908338399",
-      "dateCreated": "2022-11-07T16:29:02-0300",
-      "status": "FINISHED",
-      "$$hashKey": "object:12429",
-      "dateFinished": "2022-11-07T16:33:29-0300",
-      "dateStarted": "2022-11-07T16:33:28-0300"
+      "dateCreated": "2022-11-13T17:04:03-0300",
+      "status": "READY",
+      "$$hashKey": "object:402"
     },
     {
       "text": "%pyspark\n\n# Con SQL porgramático\n\nnUsr4CtryGen2 = profiles \\\n                .groupBy(\"country\",\"gender\").agg(count(\"*\").alias(\"cantidad\")) \\\n                .orderBy(\"cantidad\", ascending=False)\n\nnUsr4CtryGen2.show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1024,17 +936,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_554896707",
+      "jobName": "paragraph_1668369843297_1260075743",
       "id": "20191126-030740_538459228",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12430"
+      "$$hashKey": "object:403"
     },
     {
       "title": "Lectura desde JDBC",
       "text": "%md\n```python\ndf = spark.read \\\n    .format(\"jdbc\") \\\n    .option(\"url\", \"jdbc:postgresql://localhost/test\") \\\n    .option(\"dbtable\", \"projects\") \\\n    .option(\"user\", \"username\") \\\n    .option(\"password\", \"password\") \\\n    .load()\n```\nMás información en:\n\n* [Spark SQL](http://spark.apache.org/docs/latest/sql-programming-guide.html#jdbc-to-other-databases).\n* [Ejemplo](https://supergloo.com/spark-sql/spark-sql-mysql-python-example-jdbc/).\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1067,17 +979,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_6093616",
+      "jobName": "paragraph_1668369843297_1197633749",
       "id": "20171023-092655_178501000",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12431"
+      "$$hashKey": "object:404"
     },
     {
       "title": "Lectura desde HIVE",
       "text": "%md\n\n```scala\nwarehouse_location = abspath('spark-warehouse')\n\nspark = SparkSession \\\n    .builder \\\n    .appName(\"Ejemplo Spark Hive\") \\\n    .config(\"spark.sql.warehouse.dir\", warehouse_location) \\\n    .enableHiveSupport() \\\n    .getOrCreate()\n\nsqlDF = spark.sql(\"SELECT key, value FROM src WHERE key < 10 ORDER BY key\")\n```\nMás información en:\n\n* [Spark SQL](https://spark.apache.org/docs/latest/sql-programming-guide.html#hive-tables).\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1110,16 +1022,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_1793594980",
+      "jobName": "paragraph_1668369843297_2038342511",
       "id": "20171023-093701_2112740736",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12432"
+      "$$hashKey": "object:405"
     },
     {
       "text": "%md\n### Escritura de tablas",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1151,17 +1063,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_1717260064",
+      "jobName": "paragraph_1668369843297_1672866582",
       "id": "20171023-115539_2069683705",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12433"
+      "$$hashKey": "object:406"
     },
     {
       "title": "SQL",
       "text": "%pyspark\n\nspark.sql(\"drop table if exists mytable\") # borro la tabla si existe\n\nspark.sql(\"create table mytable as select * from users\") # users ya fue creado\n# Simula Hive Data Warehouse local\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1193,17 +1105,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_37953657",
+      "jobName": "paragraph_1668369843298_1049982480",
       "id": "20171023-115517_1163412651",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12434"
+      "$$hashKey": "object:407"
     },
     {
       "title": "Dataframe",
       "text": "%pyspark\n\nprofiles.write.mode(\"overwrite\").save(\"./profiles.parquet\")\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1230,16 +1142,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_524376247",
+      "jobName": "paragraph_1668369843298_714890562",
       "id": "20171023-115718_1445962443",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12435"
+      "$$hashKey": "object:408"
     },
     {
       "text": "%sh\nls -ld ./spark-warehouse\nls -l ./spark-warehouse\n\nls -ld ./*.parquet",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1269,16 +1181,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_1242101732",
+      "jobName": "paragraph_1668369843298_742959435",
       "id": "20171023-165238_672281439",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12436"
+      "$$hashKey": "object:409"
     },
     {
       "text": "%pyspark\nspark.sql(\"SHOW Tables\").show()",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1339,17 +1251,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_1829462833",
+      "jobName": "paragraph_1668369843298_1226023436",
       "id": "paragraph_1634321466906_1716543956",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12437"
+      "$$hashKey": "object:410"
     },
     {
       "title": "Ejercicio",
       "text": "%md\nComplete el siguiente programa par calcular la edad promedio por género y guarde el resultado como tabla SQL y como archivo parquet.\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1381,17 +1293,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_375381236",
+      "jobName": "paragraph_1668369843298_817095424",
       "id": "20171023-164954_326955331",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12438"
+      "$$hashKey": "object:411"
     },
     {
       "title": "",
       "text": "%pyspark\n\n# Como tabla SQL\n\nspark.sql(\"drop table if exists gen_prom\") # borro la tabla si existe\n\nspark.sql(\"create table gen_prom as SELECT gender, avg(age) AS age_avg FROM users GROUP BY gender\")\n\n#Cargo tabla y muestro su contenido\n\nspark.sql(\"select * from gen_prom\").show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1424,16 +1336,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_1199596822",
+      "jobName": "paragraph_1668369843298_201717129",
       "id": "20201023-123443_40437356",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12439"
+      "$$hashKey": "object:412"
     },
     {
       "text": "%pyspark\n\n# Como parquet\n\nfrom pyspark.sql.functions import avg\n\ngenProm = profiles \\\n            .groupBy(\"gender\").agg(avg(\"age\").alias(\"age_avg\"))\n\ngenProm.write.mode(\"overwrite\").save(\"./gen_prom.parquet\")\n\n# Cargo parquet y muestro su contenido\nspark.read.load(\"./gen_prom.parquet\").show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1465,16 +1377,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_1432489341",
+      "jobName": "paragraph_1668369843298_1453972897",
       "id": "20191128-172216_319223823",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12440"
+      "$$hashKey": "object:413"
     },
     {
       "text": "%md\n### Otro ejemplo de query programático SQL programático",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1507,16 +1419,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342922_1050826176",
+      "jobName": "paragraph_1668369843298_185680947",
       "id": "paragraph_1634183154525_2053567181",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12441"
+      "$$hashKey": "object:414"
     },
     {
       "text": "%sh\n\ncat ../../diplodatos_bigdata/ds/people.json",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1547,17 +1459,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_194558094",
+      "jobName": "paragraph_1668369843298_2062899159",
       "id": "paragraph_1634315423702_324581589",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12442"
+      "$$hashKey": "object:415"
     },
     {
       "title": "Ejemplo",
       "text": "%pyspark\n\ndf = spark.read.json(\"../../diplodatos_bigdata/ds/people.json\")\n\n# Displays the content of the DataFrame to stdout\ndf.show()\n\n# Selecciona todo incrementando la edad\ndf.selectExpr(\"name\", \"age + 1\").show()\n\n# O tambien\ndf.select(\"name\", df.age + 1).show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1601,16 +1513,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_870110877",
+      "jobName": "paragraph_1668369843298_1340065667",
       "id": "20161011-151030_1991021842",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12443"
+      "$$hashKey": "object:416"
     },
     {
       "text": "%pyspark\n\n# Selecciona personas con mas de 21 años\ndf.filter(\"age > 21\").show()\n\n# Cuenta personas por edad\ndf.groupBy(\"age\").count().show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1654,17 +1566,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_1996225506",
+      "jobName": "paragraph_1668369843298_473019381",
       "id": "20171024-102324_940444908",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12444"
+      "$$hashKey": "object:417"
     },
     {
       "title": "Mas Información en",
       "text": "%md\n\n* [API Python SQL](http://spark.apache.org/docs/2.2.1/api/python/pyspark.sql.html)\n* [Function Reference](http://spark.apache.org/docs/2.2.1/api/python/pyspark.sql.html#module-pyspark.sql.functions)\n* [Doc Spark SQL](http://spark.apache.org/docs/2.2.1/sql-programming-guide.html)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1709,16 +1621,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_1264907811",
+      "jobName": "paragraph_1668369843298_623141715",
       "id": "20161012-103356_1938807399",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12445"
+      "$$hashKey": "object:418"
     },
     {
       "text": "%md\n### Eficiencia\n\nLos **RDD** tienen el overhead de la *serialización*:\n\n* cuando los objetos se transfieren (por red) y guardan (disco)\n* overhead de garbage collector\n\nLos **Datasets** solucionan estos problemas:\n\n* Serializa a binario usando **encoders**\n    - parte del proyecto Tungsten\n    - permite operaciones sin deserializar\n    - corre *off-heap* (sin garbage collection)\n    - código para serialización generado en forma dinámica\n* Con la información de la estructura (*schema*) Spark hace optimizaciones.\n    - Usa *Catalyst optimizer*.\n    - Transfiere solo columnas usadas, no objetos enteros (relational query plan).\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1762,17 +1674,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_155167666",
+      "jobName": "paragraph_1668369843298_993481570",
       "id": "20161011-174737_215333010",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12446"
+      "$$hashKey": "object:419"
     },
     {
       "title": "WordCount con RDD",
       "text": "%pyspark\n\nlinesRDD = sc.textFile(\"README.md\")\n\nwordsRDD = linesRDD \\\n            .flatMap(lambda l: l.split(\" \")) \\\n            .filter(lambda w:  w)\n#MapReduce:\nwordCountRDD = wordsRDD.map(lambda w: (w,1)) \\\n                .reduceByKey(lambda nx,ny:  nx+ny)\n\nresultRDD = wordCountRDD \\\n                .sortBy((lambda p: p[1]), ascending = False)\n                # ordena por cantidad\n\nprint(\"Resultado:\")\n\nfor w, c in resultRDD.collect()[:5]: #  traigo resultados\n    print(w, c)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "lineNumbers": true,
@@ -1815,17 +1727,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_89509672",
+      "jobName": "paragraph_1668369843298_2101496241",
       "id": "20201023-123509_121589787",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12447"
+      "$$hashKey": "object:420"
     },
     {
       "title": "WordCount con DataFrames",
       "text": "%pyspark\n\nfrom pyspark.sql.functions import split, explode\n\nlinesDF = spark.read.text(\"README.md\").toDF(\"lineas\")\n\nwordsDF = linesDF \\\n            .select(explode(split(\"lineas\", ' ')).alias(\"words\")) \\\n            .filter(\"words != ''\")\n\nwordCountDF = wordsDF \\\n                .groupBy(\"words\").count()\n\nresultDF = wordCountDF \\\n                .orderBy(\"count\", ascending=False)\n#                // ordena por cantidad\n\nprint(\"Resultado:\")\n\nresultDF.show(n=5, truncate=False)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "lineNumbers": true,
@@ -1868,16 +1780,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_645684312",
+      "jobName": "paragraph_1668369843298_28124440",
       "id": "20201023-123527_1290957379",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12448"
+      "$$hashKey": "object:421"
     },
     {
       "text": "print(s\"\"\"%html\n&nbsp;\n<img src=\"$baseDir/03_sql/Distributed-Wordcount-Chart.png\" alt=\"Drawing\" style=\"width: 100%;\"/>\n\"\"\")",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1918,16 +1830,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_2017510562",
+      "jobName": "paragraph_1668369843298_884076185",
       "id": "20161011-201107_202795512",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12449"
+      "$$hashKey": "object:422"
     },
     {
       "text": "print(s\"\"\"%html\n&nbsp;\n<img src=\"$baseDir/03_sql/Memory-Usage-when-Caching-Chart.png\" alt=\"Drawing\" style=\"width: 100%;\"/>\n\"\"\")",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1968,16 +1880,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_715125629",
+      "jobName": "paragraph_1668369843298_1772323741",
       "id": "20161011-201419_1048673058",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12450"
+      "$$hashKey": "object:423"
     },
     {
       "text": "%md\n#### Tungsten en acción",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -2010,17 +1922,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_124405994",
+      "jobName": "paragraph_1668369843298_380064842",
       "id": "paragraph_1634182605221_1380886083",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12451"
+      "$$hashKey": "object:424"
     },
     {
       "title": "Tungsten en acción",
       "text": "%pyspark\n\nints = range(pow(10, 6))\nprint(ints[:10])\nintsRDD = sc.parallelize(ints).setName(\"intsRDD\").cache()\n\n# Fuerzo evaluacion\nprint(intsRDD.count())\n\n# Ver sparkui storage.\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -2062,17 +1974,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_812984085",
+      "jobName": "paragraph_1668369843298_1463203792",
       "id": "20161017-104100_1861019655",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12452"
+      "$$hashKey": "object:425"
     },
     {
       "title": "Tungsten en acción",
       "text": "%pyspark\n\nints = range(pow(10, 6))\n\nfrom pyspark.sql.types import IntegerType\n\nintsDF = spark.createDataFrame(ints, IntegerType()).cache()\nintsDF.cache()\n\nprint(intsDF.count())\n\n# Ver sparkui ahora.",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -2114,16 +2026,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_718758830",
+      "jobName": "paragraph_1668369843298_1217999625",
       "id": "paragraph_1634182688863_1554058947",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12453"
+      "$$hashKey": "object:426"
     },
     {
       "text": "%pyspark\n\nuiHost = sc.getConf().get(\"spark.driver.host\")#.getOrElse(\"localhost\")\nuiPort = sc.uiWebUrl.split(\":\")[-1]\n\ntextNabuco = \"\"\"%html\n%html\nVer resultado en Spark UI Storage\n<a href=\"http://localhost:4040\">http://localhost(host):4040(port)</a><br>\n\"\"\"\n\ntextLocal = \"\"\"%html\nVer resultado en Spark UI Storage\n<a href=\"http://{}:{}\">http://{}(host):{}(port)</a>\n\"\"\".format(uiHost,uiPort,uiHost,uiPort)\n\nif uiHost == \"200.16.29.165\":\n    print(textNabuco)\nelse:\n    print(textLocal)\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -2168,16 +2080,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_1264940885",
+      "jobName": "paragraph_1668369843298_65120886",
       "id": "20161017-104452_771251326",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12454"
+      "$$hashKey": "object:427"
     },
     {
       "text": "%md\n## Ventajas/desventajas de las diferentes APIs",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -2220,17 +2132,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_602637263",
+      "jobName": "paragraph_1668369843298_1979448491",
       "id": "20161017-123303_1620980443",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12455"
+      "$$hashKey": "object:428"
     },
     {
       "title": "APIs tipadas y no tipadas",
       "text": "print(s\"\"\"\n%table\nLenguaje\\t Abstracción Principal\nScala \\t Dataset[T] y Dataframe (Datset[Row])\nJava  \\t Dataset[T]\nPython \\t Dataframe\nR \\t Dataframe\n\"\"\")\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {},
@@ -2314,17 +2226,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_1530948175",
+      "jobName": "paragraph_1668369843298_538687399",
       "id": "20161017-123522_72698600",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12456"
+      "$$hashKey": "object:429"
     },
     {
       "title": "Detección de errores",
       "text": "print(s\"\"\"%html\n&nbsp;\n<img src=\"$baseDir/03_sql/type-safety-spectrum.png\" alt=\"Drawing\" style=\"width: 100%;\"/>\n\"\"\")",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -2366,17 +2278,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_1077009381",
+      "jobName": "paragraph_1668369843298_798506614",
       "id": "20161017-124430_789707578",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12457"
+      "$$hashKey": "object:430"
     },
     {
       "title": "Cuando usar Datasets Dataframes o RDD",
       "text": "%md\n* Si se necesita expresiones de alto nivel, filters, maps, aggregations, promedios, sumatorias, queries SQL, acceso por columna y funciones lambda sobre datos semiestructurados\n    - para desarrollar aplicaciones finales (Data Ingeeniering) usar **Datasets**.\n    - para análisis interactivo (Data Scientist) usar **Dataframes**. \n* Si se necesita mayor seguridad de tipos chequeandolos a tiempo de compilación, objetos JVM, beneficios de optimización Catalyst y código eficiente con Tungsten usar **Datasets**.\n* Si se quiere una API unificada a traves de la la librerías Spark usar **DataFrames** o **Datasets**.\n* Si se quiere trabajar en R no queda otra que usar **DataFrames**.\n* Si se quiere trabajar en Python no queda otra que usar **DataFrames** y recurrir a **RDDs** si se necesita mayor control.\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -2421,17 +2333,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342923_1060292611",
+      "jobName": "paragraph_1668369843299_941877370",
       "id": "20161017-124933_322133526",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12458"
+      "$$hashKey": "object:431"
     },
     {
       "title": "Ejercicio",
       "text": "%md\nCon el dataset `profiles` complete el siguiente código para calcular la cantidad de registraciones por día de la semana.\n\n#### Ayuda:\n\n* En [SQL API Function Reference](http://spark.apache.org/docs/2.2.1/api/python/pyspark.sql.html#module-pyspark.sql.functions) en la sección \"Date time functions\" hay métodos para manipular fechas.\n* [Date and Time Patterns](https://docs.oracle.com/javase/10/docs/api/java/text/SimpleDateFormat.html).\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -2464,16 +2376,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342924_2019532162",
+      "jobName": "paragraph_1668369843299_830725290",
       "id": "20171023-182043_62941752",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12459"
+      "$$hashKey": "object:432"
     },
     {
       "text": "%pyspark #Falta terminar\n\nfrom pyspark.sql.functions import unix_timestamp, from_unixtime\n\nprofiles = spark.read.load(\"../../diplodatos_bigdata/ds/userid-profile.tsv\",\n                    format=\"csv\", delimiter=\"\\t\", header=True, inferSchema=True)\n\nregByDayOfWeek = profiles.select(\"registered\", unix_timestamp(\"registered\", 'MMM d, yyyy' ).alias(\"reg_sec\"))\\\n                    .select(\"*\", from_unixtime(\"reg_sec\",\"E\").alias(\"day_week\")) #ver SQL API link\n\n\nz.show(regByDayOfWeek.groupBy(\"day_week\").count())\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:39:58-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -2554,59 +2466,19 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "SPARK JOB",
-          "tooltip": "View in Spark web UI",
-          "group": "spark",
-          "values": [
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=21",
-              "$$hashKey": "object:19854"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=22",
-              "$$hashKey": "object:19855"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=23",
-              "$$hashKey": "object:19856"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=24",
-              "$$hashKey": "object:19857"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=25",
-              "$$hashKey": "object:19858"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=26",
-              "$$hashKey": "object:19859"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=27",
-              "$$hashKey": "object:19860"
-            }
-          ],
-          "interpreterSettingId": "spark"
-        }
-      },
+      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342924_979225824",
+      "jobName": "paragraph_1668369843299_327834136",
       "id": "20191128-193328_151154793",
-      "dateCreated": "2022-11-07T16:29:02-0300",
-      "status": "FINISHED",
-      "$$hashKey": "object:12460",
-      "dateFinished": "2022-11-07T16:39:39-0300",
-      "dateStarted": "2022-11-07T16:39:38-0300"
+      "dateCreated": "2022-11-13T17:04:03-0300",
+      "status": "READY",
+      "$$hashKey": "object:433"
     },
     {
       "title": "Fin",
       "text": "//val baseDir=\"https://git.cs.famaf.unc.edu.ar/dbarsotti/diplodatos_bigdata/raw/master/clases\"\nval baseDir=\"https://bitbucket.org/bigdata_famaf/diplodatos_bigdata/raw/HEAD/clases\"\n\nz.put(\"baseDir\", baseDir)\nprint(\"\"\"%html\n<script>\n    var heads = document.getElementsByTagName('h2');\n    var numHeads = heads.length;\n    var inner = \"\";\n    var i = 0;\n    var j = 0;\n    while (i < numHeads){\n        inner = heads[i].innerHTML;\n        if (inner.search(\".-\") != -1 ) {\n            j++;\n            heads[i].innerHTML = inner.replace(/(~|\\d+)\\.-/,\"\"+j+\".-\");\n        }\n        i++\n    }\n</script>\n\"\"\")",
       "user": "anonymous",
-      "dateUpdated": "2022-11-07T16:29:02-0300",
+      "dateUpdated": "2022-11-13T17:04:03-0300",
       "progress": 0,
       "config": {
         "tableHide": true,
@@ -2652,15 +2524,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1667849342924_1146480295",
+      "jobName": "paragraph_1668369843299_540796145",
       "id": "20161011-125733_1279366716",
-      "dateCreated": "2022-11-07T16:29:02-0300",
+      "dateCreated": "2022-11-13T17:04:03-0300",
       "status": "READY",
-      "$$hashKey": "object:12461"
+      "$$hashKey": "object:434"
     }
   ],
-  "name": "Clase 03 - SQL",
-  "id": "2HHU8BSBN",
+  "name": "gedfgdfgdfgdf",
+  "id": "2HKVHU3RQ",
   "defaultInterpreterGroup": "spark",
   "version": "0.10.0",
   "noteParams": {},
@@ -2672,5 +2544,5 @@
     "personalizedMode": "false"
   },
   "info": {},
-  "path": "/Clase 03 - SQL"
+  "path": "/gedfgdfgdfgdf"
 }
