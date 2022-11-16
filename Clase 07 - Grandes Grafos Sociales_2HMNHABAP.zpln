@@ -970,7 +970,7 @@
     },
     {
       "title": "Load Tweets",
-      "text": "%pyspark\n\ntweets = spark.read.parquet(\"/home/david/diplodatos_bigdata/ds/tweets.pqt\")\n\nprint(\"Cantidad de tweets:\", tweets.count())\n\nz.show(tweets.limit(10))\n# RT_times es la cantidad de veces que el usuario retweeteo el tweet\n",
+      "text": "%pyspark\n\ntweets = spark.read.parquet(\"../../diplodatos_bigdata/ds/tweets.pqt\")\n\nprint(\"Cantidad de tweets:\", tweets.count())\n\nz.show(tweets.limit(10))\n# RT_times es la cantidad de veces que el usuario retweeteo el tweet\n",
       "user": "anonymous",
       "dateUpdated": "2022-11-15T20:59:37-0300",
       "progress": 0,
