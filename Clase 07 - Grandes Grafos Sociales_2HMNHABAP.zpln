@@ -37,7 +37,7 @@
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
       "focus": true,
-      "$$hashKey": "object:512"
+      "$$hashKey": "object:548"
     },
     {
       "title": "Antes de comenzar",
@@ -80,7 +80,7 @@
       "id": "20171026-104737_1316799732",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:513"
+      "$$hashKey": "object:549"
     },
     {
       "text": "%md\n# Grandes Grafos Sociales",
@@ -119,7 +119,7 @@
       "id": "20171101-121050_1177283744",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:514"
+      "$$hashKey": "object:550"
     },
     {
       "text": "%md\n## GraphFrames\n\n* Utiliza la interface Spark SQL (Dataframes).\n* Creada por [Databricks](https://databricks.com/).\n* Por ahora no viene en la distribución estandard de Spark (solo [GraphX](http://spark.apache.org/graphx/) sobre RDD's).\n* Algoritmos ya implementados como: \n    - Breadth-first search (BFS)\n    - Componentes (fuertemente) conexas\n    - Label Propagation Algorithm (para detectar comunidades)\n    - PageRank\n    - Shortest paths\n    - Triangle count.\n* **Agregación de mensajes** para hacer algoritmos.\n* **Motif finding** para queries. \n\n### Documentación:\n\n* [User Guide](https://graphframes.github.io/graphframes/docs/_site/user-guide.html).\n* [User Guide - Python](https://docs.databricks.com/spark/latest/graph-analysis/graphframes/user-guide-python.html).\n* [Documentación de la API](https://graphframes.github.io/graphframes/docs/_site/api/python/index.html).\n",
@@ -160,7 +160,7 @@
       "id": "20171102-112550_410534992",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:515"
+      "$$hashKey": "object:551"
     },
     {
       "text": "%md\n### Creación de grafo\n\n* Se crean a partir de `DataFrame` de aristas y/o vértices.\n* DataFrame de aristas debe tener las columnas `src` y `dst` (por lo menos).\n* DataFrame de vértices debe tener la columna `id` (por lo menos).\n* Los grafos son dirigidos.\n* Se almacenan con redundancia (vertex cut):\n  ![](http://spark.apache.org/docs/latest/img/edge_cut_vs_vertex_cut.png)\n\n",
@@ -201,7 +201,7 @@
       "id": "20181027-002925_1222103561",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:516"
+      "$$hashKey": "object:552"
     },
     {
       "text": "%md\n### Veamos un ejemplo:\n",
@@ -243,12 +243,12 @@
       "id": "20201030-111511_962191836",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:517"
+      "$$hashKey": "object:553"
     },
     {
       "text": "%pyspark\n\nfrom graphframes import *\n\n# DataFrame de vértices\nv = spark.createDataFrame([\n  (\"a\", \"Alice\", 34),\n  (\"b\", \"Bob\", 36),\n  (\"c\", \"Charlie\", 30),\n  (\"d\", \"David\", 29),\n  (\"e\", \"Esther\", 32),\n  (\"f\", \"Fanny\", 36),\n  (\"g\", \"Gabby\", 60)\n],[\"id\", \"name\", \"age\"])\n\n# DataFrame de aristas\ne = spark.createDataFrame([\n  (\"a\", \"b\", \"amigo\"),\n  (\"b\", \"c\", \"sigue\"),\n  (\"c\", \"b\", \"sigue\"),\n  (\"f\", \"c\", \"sigue\"),\n  (\"e\", \"f\", \"sigue\"),\n  (\"e\", \"d\", \"amigo\"),\n  (\"d\", \"a\", \"amigo\"),\n  (\"a\", \"e\", \"amigo\"),\n  (\"a\", \"h\", \"amigo\")\n], [\"src\", \"dst\", \"relationship\"])\n\n# Creacion de GraphFrame\ng = GraphFrame(v, e)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:23:49-0300",
+      "dateUpdated": "2022-11-17T17:06:19-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -278,15 +278,15 @@
       "jobName": "paragraph_1668556548945_1539993242",
       "id": "20181027-003337_2137373030",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:23:49-0300",
-      "dateFinished": "2022-11-16T18:24:07-0300",
+      "dateStarted": "2022-11-17T17:06:19-0300",
+      "dateFinished": "2022-11-17T17:06:19-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:518"
+      "$$hashKey": "object:554"
     },
     {
       "text": "%pyspark\n\nz.show(g.vertices)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:26:07-0300",
+      "dateUpdated": "2022-11-17T17:06:23-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -354,16 +354,16 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=0",
-              "$$hashKey": "object:12520"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=48",
+              "$$hashKey": "object:12995"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=1",
-              "$$hashKey": "object:12521"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=49",
+              "$$hashKey": "object:12996"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=2",
-              "$$hashKey": "object:12522"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=50",
+              "$$hashKey": "object:12997"
             }
           ],
           "interpreterSettingId": "spark"
@@ -373,15 +373,15 @@
       "jobName": "paragraph_1668556548945_166730638",
       "id": "20181027-004033_1700498403",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:26:07-0300",
-      "dateFinished": "2022-11-16T18:26:09-0300",
+      "dateStarted": "2022-11-17T17:06:23-0300",
+      "dateFinished": "2022-11-17T17:06:23-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:519"
+      "$$hashKey": "object:555"
     },
     {
       "text": "%pyspark\n\nz.show(g.edges)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:26:13-0300",
+      "dateUpdated": "2022-11-17T17:06:26-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -449,16 +449,16 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=3",
-              "$$hashKey": "object:13189"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=51",
+              "$$hashKey": "object:13675"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=4",
-              "$$hashKey": "object:13190"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=52",
+              "$$hashKey": "object:13676"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=5",
-              "$$hashKey": "object:13191"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=53",
+              "$$hashKey": "object:13677"
             }
           ],
           "interpreterSettingId": "spark"
@@ -468,15 +468,15 @@
       "jobName": "paragraph_1668556548945_1066145249",
       "id": "20181027-004041_1915960464",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:26:13-0300",
-      "dateFinished": "2022-11-16T18:26:14-0300",
+      "dateStarted": "2022-11-17T17:06:26-0300",
+      "dateFinished": "2022-11-17T17:06:26-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:520"
+      "$$hashKey": "object:556"
     },
     {
       "text": "%pyspark\n\n# Query: Get in-degree of each vertex.\nz.show(g.inDegrees)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:26:18-0300",
+      "dateUpdated": "2022-11-17T17:06:29-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -542,24 +542,24 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=6",
-              "$$hashKey": "object:13964"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=54",
+              "$$hashKey": "object:14455"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=7",
-              "$$hashKey": "object:13965"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=55",
+              "$$hashKey": "object:14456"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=8",
-              "$$hashKey": "object:13966"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=56",
+              "$$hashKey": "object:14457"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=9",
-              "$$hashKey": "object:13967"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=57",
+              "$$hashKey": "object:14458"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=10",
-              "$$hashKey": "object:13968"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=58",
+              "$$hashKey": "object:14459"
             }
           ],
           "interpreterSettingId": "spark"
@@ -569,15 +569,15 @@
       "jobName": "paragraph_1668556548945_1683370710",
       "id": "20191205-202553_1454342767",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:26:18-0300",
-      "dateFinished": "2022-11-16T18:26:20-0300",
+      "dateStarted": "2022-11-17T17:06:29-0300",
+      "dateFinished": "2022-11-17T17:06:29-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:521"
+      "$$hashKey": "object:557"
     },
     {
       "text": "%pyspark\n\n\n# Query: Count the number of \"follow\" connections in the graph.\n\nprint(\"Cantidad de amistades:\", \n        g.edges.filter(\"relationship = 'amigo'\").count())\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:27:22-0300",
+      "dateUpdated": "2022-11-17T17:00:31-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -614,8 +614,8 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=12",
-              "$$hashKey": "object:14517"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=11",
+              "$$hashKey": "object:2323"
             }
           ],
           "interpreterSettingId": "spark"
@@ -625,10 +625,10 @@
       "jobName": "paragraph_1668556548945_2041828898",
       "id": "20191205-202527_215305701",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:27:22-0300",
-      "dateFinished": "2022-11-16T18:27:22-0300",
+      "dateStarted": "2022-11-17T17:00:31-0300",
+      "dateFinished": "2022-11-17T17:00:31-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:522"
+      "$$hashKey": "object:558"
     },
     {
       "text": "%md\n### PageRank\n\n#### Se calcula el Page Rank de cada página: $$PR(p_i) = \\frac{\\epsilon}{N} + (1-\\epsilon) \\sum_{p_j \\in M(p_i)} \\frac{PR (p_j)}{L(p_j)}$$\n* donde \\\\(N\\\\) es la cantidad de paginas, \n* \\\\(\\epsilon\\\\) es la probabilidad de quedarse en la pagina (*reset probability*), \n* \\\\(M(p_i)\\\\) son las páginas que apuntan a \\\\(p_i\\\\) y \n* \\\\(L(p_j)\\\\) es la cantidad e links de la página \\\\(p_j\\\\).\n\n\n![](https://bitbucket.org/bigdata_famaf/diplodatos_bigdata/raw/HEAD/clases/00_introduccion/page_rank.png)\n\n\nMás info en [PageRank](https://es.wikipedia.org/wiki/PageRank).",
@@ -670,13 +670,13 @@
       "id": "paragraph_1634844119648_1955861883",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:523"
+      "$$hashKey": "object:559"
     },
     {
       "title": "PageRank",
       "text": "%pyspark\n\n# Run PageRank algorithm, and show results.\nresults = g.pageRank(resetProbability=0.01, maxIter=10)\n\nz.show(results.vertices.select(\"id\", \"pagerank\"))\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:27:27-0300",
+      "dateUpdated": "2022-11-17T17:06:35-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -781,80 +781,80 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=13",
-              "$$hashKey": "object:15614"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=59",
+              "$$hashKey": "object:15988"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=14",
-              "$$hashKey": "object:15615"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=60",
+              "$$hashKey": "object:15989"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=15",
-              "$$hashKey": "object:15616"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=61",
+              "$$hashKey": "object:15990"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=16",
-              "$$hashKey": "object:15617"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=62",
+              "$$hashKey": "object:15991"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=17",
-              "$$hashKey": "object:15618"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=63",
+              "$$hashKey": "object:15992"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=18",
-              "$$hashKey": "object:15619"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=64",
+              "$$hashKey": "object:15993"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=19",
-              "$$hashKey": "object:15620"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=65",
+              "$$hashKey": "object:15994"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=20",
-              "$$hashKey": "object:15621"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=66",
+              "$$hashKey": "object:15995"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=21",
-              "$$hashKey": "object:15622"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=67",
+              "$$hashKey": "object:15996"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=22",
-              "$$hashKey": "object:15623"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=68",
+              "$$hashKey": "object:15997"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=23",
-              "$$hashKey": "object:15624"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=69",
+              "$$hashKey": "object:15998"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=24",
-              "$$hashKey": "object:15625"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=70",
+              "$$hashKey": "object:15999"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=25",
-              "$$hashKey": "object:15626"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=71",
+              "$$hashKey": "object:16000"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=26",
-              "$$hashKey": "object:15627"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=72",
+              "$$hashKey": "object:16001"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=27",
-              "$$hashKey": "object:15628"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=73",
+              "$$hashKey": "object:16002"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=28",
-              "$$hashKey": "object:15629"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=74",
+              "$$hashKey": "object:16003"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=29",
-              "$$hashKey": "object:15630"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=75",
+              "$$hashKey": "object:16004"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=30",
-              "$$hashKey": "object:15631"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=76",
+              "$$hashKey": "object:16005"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=31",
-              "$$hashKey": "object:15632"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=77",
+              "$$hashKey": "object:16006"
             }
           ],
           "interpreterSettingId": "spark"
@@ -864,16 +864,16 @@
       "jobName": "paragraph_1668556548945_1763737059",
       "id": "20191205-202719_809801770",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:27:27-0300",
-      "dateFinished": "2022-11-16T18:28:09-0300",
+      "dateStarted": "2022-11-17T17:06:35-0300",
+      "dateFinished": "2022-11-17T17:07:12-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:524"
+      "$$hashKey": "object:560"
     },
     {
       "title": "Guardemos el grafo",
       "text": "%pyspark\nfrom pyspark.sql.functions import col\n\ng.edges.printSchema()\n\ng.edges \\\n        .select(col(\"src\").alias(\"Source\"), \n                col(\"dst\").alias(\"Target\"), \n                \"relationship\") \\\n        .coalesce(1) \\\n        .write \\\n        .csv(\"g_edges.csv\", mode=\"overwrite\", header=True)\n\n# Ver que pasa sin coalesce",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:28:24-0300",
+      "dateUpdated": "2022-11-17T17:07:32-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -911,8 +911,8 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=32",
-              "$$hashKey": "object:16167"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=78",
+              "$$hashKey": "object:16546"
             }
           ],
           "interpreterSettingId": "spark"
@@ -922,10 +922,10 @@
       "jobName": "paragraph_1668556548946_1960464474",
       "id": "20201029-163912_1652236873",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:28:24-0300",
-      "dateFinished": "2022-11-16T18:28:24-0300",
+      "dateStarted": "2022-11-17T17:07:32-0300",
+      "dateFinished": "2022-11-17T17:07:32-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:525"
+      "$$hashKey": "object:561"
     },
     {
       "text": "%md\n## Ejemplo Red de Usuarios Twitter",
@@ -966,13 +966,13 @@
       "id": "20181024-105040_178046617",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:526"
+      "$$hashKey": "object:562"
     },
     {
       "title": "Load Tweets",
-      "text": "%pyspark\n\ntweets = spark.read.parquet(\"../../diplodatos_bigdata/ds/tweets.pqt\")\n\nprint(\"Cantidad de tweets:\", tweets.count())\n\nz.show(tweets.limit(10))\n# RT_times es la cantidad de veces que el usuario retweeteo el tweet\n",
+      "text": "%pyspark\n\ntweets = spark.read.parquet(\"/home/david/diplodatos_bigdata/ds/tweets.pqt\")\n\nprint(\"Cantidad de tweets:\", tweets.count())\n\nz.show(tweets.limit(10))\n# RT_times es la cantidad de veces que el usuario retweeteo el tweet\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:28:51-0300",
+      "dateUpdated": "2022-11-17T17:07:36-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1046,16 +1046,16 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=33",
-              "$$hashKey": "object:16371"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=79",
+              "$$hashKey": "object:16728"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=34",
-              "$$hashKey": "object:16372"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=80",
+              "$$hashKey": "object:16729"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=35",
-              "$$hashKey": "object:16373"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=81",
+              "$$hashKey": "object:16730"
             }
           ],
           "interpreterSettingId": "spark"
@@ -1065,10 +1065,10 @@
       "jobName": "paragraph_1668556548946_275421585",
       "id": "20171101-124010_495006264",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:28:51-0300",
-      "dateFinished": "2022-11-16T18:28:52-0300",
+      "dateStarted": "2022-11-17T17:07:36-0300",
+      "dateFinished": "2022-11-17T17:07:36-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:527"
+      "$$hashKey": "object:563"
     },
     {
       "text": "%md\n### Definición de la red de usuarios:\n\n* Queremos que un **usuario A esté conectado con usuario B** si B retweeteó un mensaje de A.\n* Queremos también la cantidad de retweets que hizo B de mensajes de A **distintos o no**.",
@@ -1109,13 +1109,13 @@
       "id": "20181024-111922_1953182558",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:528"
+      "$$hashKey": "object:564"
     },
     {
       "title": "Generamos las conecciones por usuarios",
       "text": "%pyspark\n\nfrom pyspark.sql.functions import sum, count\n\ntwitterConnections = tweets \\\n                        .groupBy(\"user\", \"RT_by\") \\\n                        .agg(sum(\"RT_times\").alias(\"count_RT\"), count(\"*\").alias(\"count_distinct_RT\"))\n\nprint(\"Cantidad de conecciones:\", twitterConnections.count())\n\nz.show(twitterConnections.limit(20))\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:29:04-0300",
+      "dateUpdated": "2022-11-17T17:07:43-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1218,12 +1218,12 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=36",
-              "$$hashKey": "object:17150"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=82",
+              "$$hashKey": "object:17504"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=37",
-              "$$hashKey": "object:17151"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=83",
+              "$$hashKey": "object:17505"
             }
           ],
           "interpreterSettingId": "spark"
@@ -1233,16 +1233,16 @@
       "jobName": "paragraph_1668556548946_2075276854",
       "id": "20171101-121958_1394663112",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:29:04-0300",
-      "dateFinished": "2022-11-16T18:29:06-0300",
+      "dateStarted": "2022-11-17T17:07:43-0300",
+      "dateFinished": "2022-11-17T17:07:45-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:529"
+      "$$hashKey": "object:565"
     },
     {
       "title": "Hay que renombrar las conexiones de tweeter:",
       "text": "%pyspark\n\nfrom pyspark.sql.functions import col\n\nedgesDF = twitterConnections \\\n    .select(col(\"user\").alias(\"src\"), \n            col(\"RT_by\").alias(\"dst\"),\n            \"count_RT\", \"count_distinct_RT\")\n                                       \nz.show(edgesDF.limit(10))\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:29:13-0300",
+      "dateUpdated": "2022-11-17T17:07:54-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1312,8 +1312,8 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=38",
-              "$$hashKey": "object:18099"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=84",
+              "$$hashKey": "object:18433"
             }
           ],
           "interpreterSettingId": "spark"
@@ -1323,16 +1323,16 @@
       "jobName": "paragraph_1668556548946_1702278488",
       "id": "20171101-124136_101875926",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:29:13-0300",
-      "dateFinished": "2022-11-16T18:29:14-0300",
+      "dateStarted": "2022-11-17T17:07:54-0300",
+      "dateFinished": "2022-11-17T17:07:54-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:530"
+      "$$hashKey": "object:566"
     },
     {
       "title": "Hay que crear el DF de vértices",
       "text": "%pyspark\n\nsrcs = edgesDF.select(col(\"src\").alias(\"id\"))\n\ndsts = edgesDF.select(col(\"dst\").alias(\"id\"))\n    \nvertexDF = srcs.unionAll(dsts).distinct()\n\nz.show(vertexDF.limit(10))\n    ",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:29:18-0300",
+      "dateUpdated": "2022-11-17T17:07:58-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1398,8 +1398,8 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=39",
-              "$$hashKey": "object:18867"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=85",
+              "$$hashKey": "object:19189"
             }
           ],
           "interpreterSettingId": "spark"
@@ -1409,16 +1409,16 @@
       "jobName": "paragraph_1668556548946_158773293",
       "id": "20191206-163757_2138250663",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:29:18-0300",
-      "dateFinished": "2022-11-16T18:29:21-0300",
+      "dateStarted": "2022-11-17T17:07:58-0300",
+      "dateFinished": "2022-11-17T17:07:58-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:531"
+      "$$hashKey": "object:567"
     },
     {
       "title": "Creación de GraphFrame:",
       "text": "%pyspark\n\nfrom graphframes import *\n\ngraph = GraphFrame(vertexDF, edgesDF).cache()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:29:31-0300",
+      "dateUpdated": "2022-11-17T17:08:05-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1448,10 +1448,10 @@
       "jobName": "paragraph_1668556548946_1355537630",
       "id": "20171101-124739_82230555",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:29:31-0300",
-      "dateFinished": "2022-11-16T18:29:31-0300",
+      "dateStarted": "2022-11-17T17:08:05-0300",
+      "dateFinished": "2022-11-17T17:08:05-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:532"
+      "$$hashKey": "object:568"
     },
     {
       "text": "%md\n### Operaciones básicas sobre grafos\n\n#### A continuación veremos como calcular: \n* la cantidad de vértices (usuarios)\n* la cantidad de arístas (conexiones)\n* el grado de cada vértice (cantidad de conexiones por usuario)",
@@ -1492,13 +1492,13 @@
       "id": "20171102-153102_880120870",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:533"
+      "$$hashKey": "object:569"
     },
     {
       "title": "Tamaño del grafo",
       "text": "%pyspark\n\nverticesCount = graph.vertices.count()\n\nedgesCount = graph.edges.count()\n\nprint(f\"\"\"%table\nCantidad de usuarios \\t Cantidad de conecciones\n{verticesCount} \\t {edgesCount}\"\"\")\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:29:38-0300",
+      "dateUpdated": "2022-11-17T17:08:10-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1565,12 +1565,12 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=40",
-              "$$hashKey": "object:19405"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=86",
+              "$$hashKey": "object:19724"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=41",
-              "$$hashKey": "object:19406"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=87",
+              "$$hashKey": "object:19725"
             }
           ],
           "interpreterSettingId": "spark"
@@ -1580,16 +1580,16 @@
       "jobName": "paragraph_1668556548946_1080373347",
       "id": "20171101-124845_773490911",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:29:38-0300",
-      "dateFinished": "2022-11-16T18:29:43-0300",
+      "dateStarted": "2022-11-17T17:08:10-0300",
+      "dateFinished": "2022-11-17T17:08:11-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:534"
+      "$$hashKey": "object:570"
     },
     {
       "title": "Cantidad de conecciones por usuario",
       "text": "%pyspark\n\nnodesDegree = graph.degrees\n\nsortedByDegree = nodesDegree.orderBy(\"degree\", ascending=False)\n\nz.show(sortedByDegree.limit(10))\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:29:50-0300",
+      "dateUpdated": "2022-11-17T17:08:19-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1656,8 +1656,8 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=42",
-              "$$hashKey": "object:19794"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=88",
+              "$$hashKey": "object:20118"
             }
           ],
           "interpreterSettingId": "spark"
@@ -1667,10 +1667,10 @@
       "jobName": "paragraph_1668556548946_1288343874",
       "id": "20171102-131720_1147432214",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:29:50-0300",
-      "dateFinished": "2022-11-16T18:29:53-0300",
+      "dateStarted": "2022-11-17T17:08:19-0300",
+      "dateFinished": "2022-11-17T17:08:22-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:535"
+      "$$hashKey": "object:571"
     },
     {
       "text": "%md\n\n## Ejemplo Agregación de Mensajes\n\n### Influencia Colectiva\n\n#### Aplicaciones: \n* Marketing viral (influencia de opinión)\n* Detección de focos de dispersión de enfermedades\n* ...\n\n#### Cómo funciona:\n* Primero se calcula la **Influencia Colectiva (CI)**\n* En cada iteración elimina del grafo el nodo de mayor CI y recalcula el CI de los nodos restantes\n* Termina cuando la componente gigante se destruye\n* Solución básica: \\\\(O(N2)\\\\). Optimizada: \\\\(O(NlogN)\\\\)\n\n> Influence maximization in complex networks through optimal percolation” (Flaviano Morone, Hernán A. Makse, 27 Jun 2015) https://arxiv.org/abs/1506.08326\n\n\n",
@@ -1711,7 +1711,7 @@
       "id": "20171102-132006_1774167041",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:536"
+      "$$hashKey": "object:572"
     },
     {
       "text": "%md\n### Fórmula de CI\n\nLa formula de collective influence para un vértice \\\\(i\\\\) es:\n\n$$ CI(i) = (degree_i -  1) \\times \\sum\\limits_{j \\in vecinos(i)} (degree_j -  1)$$\n\nSe supone un grafo **no dirigido**.\n\n### Pasos para calcular collective influence son:\n\n* agregar el grado (degree) de cada nodo al grafo.\n* importar `AggregateMessages`.\n* calcular collective influence de cada individuo usando `AggregateMessages` de `GraphFrame`\n* ordenar los individuos por su collective influence de mayor a menor\n* imprimir el listado de individuos\n\n\n#### Documentación para implementar con GraphFrames:\n\n* Documentación sobre [AggregateMessages](https://graphframes.github.io/graphframes/docs/_site/user-guide.html#message-passing-via-aggregatemessages) con ejemplo.\n* Documentación de [API AggregateMessages](https://graphframes.github.io/graphframes/docs/_site/api/python/graphframes.html).\n",
@@ -1752,12 +1752,12 @@
       "id": "20171102-131904_821311339",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:537"
+      "$$hashKey": "object:573"
     },
     {
-      "text": "%pyspark\n\nfrom pyspark.sql.functions import sum\nfrom graphframes.lib import AggregateMessages as AM\n\n#Creo un nuevo grafo con los nodos y su degree (disponible en nodesDegree) y las aristas originales\ndegreeGraph = GraphFrame(nodesDegree, graph.edges )\n# Aristas y vértices están bien particionadas\n\n\n# Comenzamos a calcular CI \n\n# Cada nodo envia su degree-1 a sus vecinos a traves de sus conecciones salientes y entrantes\nmsgToDst = AM.src[\"degree\"] - 1\nmsgToSrc = AM.dst[\"degree\"] - 1\n\n# El DataFrame sumNeighborDegrees debe tener 2 columnas: id del nodo y sum_neighbor_degree \nsumNeighborDegrees = degreeGraph.aggregateMessages(\n    sum(AM.msg).alias(\"sum_neighbor_degree\"), # Hace aggregation en cada nodo sobre los mensages recibidos \n    sendToDst=msgToDst, # Envia a vecino por coneccion saliente\n    sendToSrc=msgToSrc) # Envia a vecino por coneccion entrante\n\n\n# Join de sumNeighborDegrees con degrees para tener todas las columnas necesarias para calcular CI.\n\nnodesDegreeJoin = nodesDegree.join(sumNeighborDegrees,\"id\")\n\n# Calculamos CI: para terminar de calcularlo debemos multiplicar la sumatoria del paso anterior por degree - 1 de cada nodo.\n# El DataFrame collectiveInfluence debe tener 3 columnas: id, ci y degree\n# Por ultimo ordena descendentemente por ci \n\ncollectiveInfluence = nodesDegreeJoin \\\n                          .select( ((col(\"degree\") - 1) * col(\"sum_neighbor_degree\")).alias(\"ci\"), \n                                    \"id\", \n                                    \"degree\") \\\n                          .orderBy(\"ci\", ascending=False) \\\n                          .cache()\n\nz.show(collectiveInfluence.limit(20))\n",
+      "text": "%pyspark\n\nfrom pyspark.sql.functions import sum\nfrom graphframes.lib import AggregateMessages as AM\n\n#Creo un nuevo grafo con los nodos y su degree (disponible en nodesDegree) y las aristas originales\ndegreeGraph = GraphFrame(nodesDegree, graph.edges)\n# Aristas y vértices están bien particionadas\n\n\n# Comenzamos a calcular CI \n\n# Cada nodo envia su degree-1 a sus vecinos a traves de sus conecciones salientes y entrantes\nmsgToDst = AM.src[\"degree\"] - 1\nmsgToSrc = AM.dst[\"degree\"] - 1\n\n# El DataFrame sumNeighborDegrees debe tener 2 columnas: id del nodo y sum_neighbor_degree \nsumNeighborDegrees = degreeGraph.aggregateMessages(\n    sum(AM.msg).alias(\"sum_neighbor_degree\"), # Hace aggregation en cada nodo sobre los mensages recibidos \n    sendToDst=msgToDst, # Envia a vecino por coneccion saliente\n    sendToSrc=msgToSrc) # Envia a vecino por coneccion entrante\n\n\n# Join de sumNeighborDegrees con degrees para tener todas las columnas necesarias para calcular CI.\n\nnodesDegreeJoin = nodesDegree.join(sumNeighborDegrees,\"id\")\n\n# Calculamos CI: para terminar de calcularlo debemos multiplicar la sumatoria del paso anterior por degree - 1 de cada nodo.\n# El DataFrame collectiveInfluence debe tener 3 columnas: id, ci y degree\n# Por ultimo ordena descendentemente por ci \n\ncollectiveInfluence = nodesDegreeJoin \\\n                          .select( ((col(\"degree\") - 1) * col(\"sum_neighbor_degree\")).alias(\"ci\"), \n                                    \"id\", \n                                    \"degree\") \\\n                          .orderBy(\"ci\", ascending=False) \\\n                          .cache()\n\nz.show(collectiveInfluence.limit(20))\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:30:08-0300",
+      "dateUpdated": "2022-11-17T17:08:40-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1824,28 +1824,8 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=43",
-              "$$hashKey": "object:20513"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=44",
-              "$$hashKey": "object:20514"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=45",
-              "$$hashKey": "object:20515"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=46",
-              "$$hashKey": "object:20516"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=47",
-              "$$hashKey": "object:20517"
-            },
-            {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=48",
-              "$$hashKey": "object:20518"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=89",
+              "$$hashKey": "object:20737"
             }
           ],
           "interpreterSettingId": "spark"
@@ -1855,10 +1835,10 @@
       "jobName": "paragraph_1668556548947_1263918060",
       "id": "20171101-125025_1054455316",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:30:08-0300",
-      "dateFinished": "2022-11-16T18:30:24-0300",
+      "dateStarted": "2022-11-17T17:08:40-0300",
+      "dateFinished": "2022-11-17T17:08:40-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:538"
+      "$$hashKey": "object:574"
     },
     {
       "text": "%md\n## Motif Finding\n\n* Es un Domain-Specific Language (DSL) para expresar queries.\n* La unidad básica es la expresión de una arista\n\n### Ejemplos\n\n* `graph.find(\"(a)-[e]->(b); (b)-[e2]->(a)\")` expresa vértices unidos en ambas direcciones.\n    - Devuelve un DataFrame con columnas `\"a\"`, `\"b\"`, `\"e\"` y `\"e2\"`.\n* `graph.find(\"(a)-[e]->(b); (b)-[e2]->(c)\")` expresa dos aristas pegadas con un vértice común `b`. \n\n### Documentacion y ejemplo\n\n* [GraphFrame User Guide](https://graphframes.github.io/graphframes/docs/_site/user-guide.html#motif-finding).\n",
@@ -1899,7 +1879,7 @@
       "id": "20181027-013740_419047675",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:539"
+      "$$hashKey": "object:575"
     },
     {
       "text": "%md\n### Recordemos el grafo",
@@ -1941,7 +1921,7 @@
       "id": "paragraph_1634934672760_445886262",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:540"
+      "$$hashKey": "object:576"
     },
     {
       "text": "%pyspark\nz.show(g.vertices)",
@@ -2014,15 +1994,15 @@
           "values": [
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=49",
-              "$$hashKey": "object:21478"
+              "$$hashKey": "object:3278"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=50",
-              "$$hashKey": "object:21479"
+              "$$hashKey": "object:3279"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=51",
-              "$$hashKey": "object:21480"
+              "$$hashKey": "object:3280"
             }
           ],
           "interpreterSettingId": "spark"
@@ -2035,7 +2015,7 @@
       "dateStarted": "2022-11-16T18:31:12-0300",
       "dateFinished": "2022-11-16T18:31:13-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:541"
+      "$$hashKey": "object:577"
     },
     {
       "text": "%pyspark\nz.show(g.edges)",
@@ -2108,15 +2088,15 @@
           "values": [
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=52",
-              "$$hashKey": "object:22152"
+              "$$hashKey": "object:3334"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=53",
-              "$$hashKey": "object:22153"
+              "$$hashKey": "object:3335"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=54",
-              "$$hashKey": "object:22154"
+              "$$hashKey": "object:3336"
             }
           ],
           "interpreterSettingId": "spark"
@@ -2129,7 +2109,7 @@
       "dateStarted": "2022-11-16T18:31:17-0300",
       "dateFinished": "2022-11-16T18:31:18-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:542"
+      "$$hashKey": "object:578"
     },
     {
       "text": "%md\n### Hagamos algunos queries",
@@ -2171,7 +2151,7 @@
       "id": "paragraph_1634934687488_918172403",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:543"
+      "$$hashKey": "object:579"
     },
     {
       "text": "%pyspark\n\n# Buscar pares de vértices en ambas direccione:\nmotifs = g.find(\"(a)-[e1]->(b); (b)-[e2]->(a)\")\n\nmotifs.printSchema()\n",
@@ -2214,7 +2194,7 @@
       "dateStarted": "2022-11-16T18:31:25-0300",
       "dateFinished": "2022-11-16T18:31:25-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:544"
+      "$$hashKey": "object:580"
     },
     {
       "text": "%pyspark\n\nz.show(motifs)\n",
@@ -2288,23 +2268,23 @@
           "values": [
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=55",
-              "$$hashKey": "object:22934"
+              "$$hashKey": "object:3470"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=56",
-              "$$hashKey": "object:22935"
+              "$$hashKey": "object:3471"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=57",
-              "$$hashKey": "object:22936"
+              "$$hashKey": "object:3472"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=58",
-              "$$hashKey": "object:22937"
+              "$$hashKey": "object:3473"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=59",
-              "$$hashKey": "object:22938"
+              "$$hashKey": "object:3474"
             }
           ],
           "interpreterSettingId": "spark"
@@ -2317,7 +2297,7 @@
       "dateStarted": "2022-11-16T18:31:31-0300",
       "dateFinished": "2022-11-16T18:31:32-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:545"
+      "$$hashKey": "object:581"
     },
     {
       "text": "%pyspark\n# Despues se pueden aplicar filtros para queries mas complejos.\nz.show(motifs.filter(\"b.age > 30\"))\n",
@@ -2391,23 +2371,23 @@
           "values": [
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=60",
-              "$$hashKey": "object:23589"
+              "$$hashKey": "object:3536"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=61",
-              "$$hashKey": "object:23590"
+              "$$hashKey": "object:3537"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=62",
-              "$$hashKey": "object:23591"
+              "$$hashKey": "object:3538"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=63",
-              "$$hashKey": "object:23592"
+              "$$hashKey": "object:3539"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=64",
-              "$$hashKey": "object:23593"
+              "$$hashKey": "object:3540"
             }
           ],
           "interpreterSettingId": "spark"
@@ -2420,7 +2400,7 @@
       "dateStarted": "2022-11-16T18:31:39-0300",
       "dateFinished": "2022-11-16T18:31:40-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:546"
+      "$$hashKey": "object:582"
     },
     {
       "text": "%md\n## Visualización\n\nA continuación visualizaremos con [Gephi](https://gephi.org/) la parte del grafo (subgrafo) que contiene los mayores influencers.\n\nPara ello generaremos archivos *csv* como entrada de esta herramienta ",
@@ -2460,12 +2440,12 @@
       "id": "20171102-160936_360694508",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:547"
+      "$$hashKey": "object:583"
     },
     {
       "text": "%pyspark\n\nminCI = 29000000\nminDegree = 600\n\n# tomo los usarios con mayor influencia o con más conecciones\nciTops = collectiveInfluence \\\n    .filter((col(\"ci\") >= minCI) | (col(\"degree\") >= minDegree))\n\ngInfluencers = GraphFrame(ciTops, graph.edges)\n\n# Tomo solo las aristas que tengan vértices\nveTops = gInfluencers.find(\"(a)-[e]->(b)\") \\\n                .cache()\n      \n                \nprint(\"Cantidad de top influencers:\", veTops.count())\n\nveTops.printSchema()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:31:46-0300",
+      "dateUpdated": "2022-11-17T17:09:03-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -2532,16 +2512,16 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=65",
-              "$$hashKey": "object:24069"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=90",
+              "$$hashKey": "object:21556"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=66",
-              "$$hashKey": "object:24070"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=91",
+              "$$hashKey": "object:21557"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=67",
-              "$$hashKey": "object:24071"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=92",
+              "$$hashKey": "object:21558"
             }
           ],
           "interpreterSettingId": "spark"
@@ -2551,15 +2531,15 @@
       "jobName": "paragraph_1668556548947_1422491770",
       "id": "20171102-000354_1806019706",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:31:46-0300",
-      "dateFinished": "2022-11-16T18:31:47-0300",
+      "dateStarted": "2022-11-17T17:09:03-0300",
+      "dateFinished": "2022-11-17T17:09:04-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:548"
+      "$$hashKey": "object:584"
     },
     {
       "text": "%pyspark\n\neTops = veTops.select(\"e.*\")\n\neTops.printSchema()\n\n# Grafo de los tops\ngTops = GraphFrame(ciTops, eTops)\n\n\n# guardo un csv con los vertices para Gephi\n# Label es igual a la id\ngTops.vertices \\\n        .select(\"*\", col(\"id\").alias(\"Label\")) \\\n        .coalesce(1) \\\n        .write \\\n        .csv(\"logs/top_influencers.csv\", mode=\"overwrite\", header=True)\n\n# guardo un csv con las aristas para Gephi\ngTops.edges \\\n        .select(col(\"src\").alias(\"Source\"), \n                col(\"dst\").alias(\"Target\"), \n                \"count_RT\",\"count_distinct_RT\") \\\n        .coalesce(1) \\\n        .write \\\n        .csv(\"logs/top_edges.csv\", mode=\"overwrite\", header=True)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:31:50-0300",
+      "dateUpdated": "2022-11-17T17:09:09-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -2596,12 +2576,12 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=68",
-              "$$hashKey": "object:24132"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=93",
+              "$$hashKey": "object:21617"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=69",
-              "$$hashKey": "object:24133"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=94",
+              "$$hashKey": "object:21618"
             }
           ],
           "interpreterSettingId": "spark"
@@ -2611,10 +2591,10 @@
       "jobName": "paragraph_1668556548947_1146220254",
       "id": "20181027-020144_852191582",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:31:50-0300",
-      "dateFinished": "2022-11-16T18:31:50-0300",
+      "dateStarted": "2022-11-17T17:09:09-0300",
+      "dateFinished": "2022-11-17T17:09:09-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:549"
+      "$$hashKey": "object:585"
     },
     {
       "text": "%md\n### Gephi\n\nLanzar el programa desde una terminal ejecutando:\n\n```sh\ngephi-0.9.2/bin/gephi\n```\n\nSeguir las instrucciones del profesor.",
@@ -2655,7 +2635,7 @@
       "id": "20171102-161414_1207858851",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:550"
+      "$$hashKey": "object:586"
     },
     {
       "text": "%md\n### Ejercicio\n\nComplete el siguiente programa para calcular el grafo de todas las conexiones hacia los 8 mayores influenciadores (influencia colectiva) y graficar el resultado con Gephi. \n\n#### Ayuda\n* Busque en la documentación [Api Datasets](https://spark.apache.org/docs/2.4.8/api/python/pyspark.sql.html#pyspark.sql.DataFrame) algún método que devuelva las *n* primeras files de un Dataset equivalente a la directiva SQL `LIMIT`. \n* Para llenar el comando `find` busque la documentación de [Motif finding](https://graphframes.github.io/graphframes/docs/_site/user-guide.html#motif-finding).",
@@ -2696,12 +2676,12 @@
       "id": "20171102-110542_600666434",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:551"
+      "$$hashKey": "object:587"
     },
     {
       "text": "%pyspark\n\ntopInfluencers = collectiveInfluence.orderBy(col(\"ci\").desc()).limit(8) # solo los 8 primeros\n\ngTops2 = GraphFrame(topInfluencers, graph.edges)\n\n# Solo las aristas que van los tops\nres1 = gTops2.find(\"(a)-[e]->(b)\")\n\neTops2 = res1.select(\"e.src\", \"e.dst\")\n\n# Junto todos los vertices de las aristas\nvTops2s = eTops2.select(col(\"src\").alias(\"id\"))\nvTops2d = eTops2.select(col(\"dst\").alias(\"id\"))\nvTops2sd = vTops2s.union(vTops2d)\n\nvTops2 = vTops2sd.join(collectiveInfluence, \"id\", \"left\").distinct()\n\nvTops2.select(\"*\", col(\"id\").alias(\"Label\"))\\\n        .coalesce(1) \\\n        .write \\\n        .csv(\"logs/top_influencers2.csv\", mode=\"overwrite\", header=True)\n\n\neTops2.withColumnRenamed(\"src\", \"Source\")\\\n    .withColumnRenamed(\"dst\", \"Target\")\\\n    .coalesce(1)\\\n    .write \\\n    .csv(\"logs/top_edges2.csv\", mode=\"overwrite\", header=True)",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:31:58-0300",
+      "dateUpdated": "2022-11-17T17:09:18-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -2733,32 +2713,32 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=70",
-              "$$hashKey": "object:24300"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=95",
+              "$$hashKey": "object:21785"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=71",
-              "$$hashKey": "object:24301"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=96",
+              "$$hashKey": "object:21786"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=72",
-              "$$hashKey": "object:24302"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=97",
+              "$$hashKey": "object:21787"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=73",
-              "$$hashKey": "object:24303"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=98",
+              "$$hashKey": "object:21788"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=74",
-              "$$hashKey": "object:24304"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=99",
+              "$$hashKey": "object:21789"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=75",
-              "$$hashKey": "object:24305"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=100",
+              "$$hashKey": "object:21790"
             },
             {
-              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=76",
-              "$$hashKey": "object:24306"
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=101",
+              "$$hashKey": "object:21791"
             }
           ],
           "interpreterSettingId": "spark"
@@ -2768,10 +2748,10 @@
       "jobName": "paragraph_1668556548948_1573935458",
       "id": "paragraph_1666384803023_696454822",
       "dateCreated": "2022-11-15T20:55:48-0300",
-      "dateStarted": "2022-11-16T18:31:58-0300",
-      "dateFinished": "2022-11-16T18:32:00-0300",
+      "dateStarted": "2022-11-17T17:09:18-0300",
+      "dateFinished": "2022-11-17T17:09:20-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:552"
+      "$$hashKey": "object:588"
     },
     {
       "text": "%md\n### Ejercicio\n\n0. Tomar el grafo de tweets y crear un dataframe con todas las aristas y vértices que forman triángulos dirigidos. O sea, todos los casos donde un usuario *A* retuitea a *B* que retuitea a *C* que retuitea a *A*.\n\n0. Hay casos donde los tres usuarios sean distintos?\n\n0. Graficar con Gephi el resultado.\n",
@@ -2813,12 +2793,12 @@
       "id": "20201030-122513_420199213",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:553"
+      "$$hashKey": "object:589"
     },
     {
-      "text": "%pyspark\n\ntriangulos_dirigidos = graph.find(\"(a)-[e]->(b); (b)-[e2]->(c); (c)-[e3]->(a)\").filter((col(\"a\") != col(\"b\")) & (col(\"b\") != col(\"c\")) & (col(\"c\") != col(\"a\")))\n\nnodos_a = triangulos_dirigidos.select(col(\"a\").alias(\"id\"))\nnodos_b = triangulos_dirigidos.select(col(\"b\").alias(\"id\"))\nnodos_c = triangulos_dirigidos.select(col(\"c\").alias(\"id\"))\n\nnodos_juntos = nodos_a.union(nodos_b).union(nodos_c).distinct()\n\ne_ = triangulos_dirigidos.select(\"e.src\", \"e.dst\")\ne2_ = triangulos_dirigidos.select(\"e2.src\", \"e2.dst\")\ne3_ = triangulos_dirigidos.select(\"e3.src\", \"e3.dst\")\n\nedges_juntos = e_.union(e2_).union(e3_).distinct()\n\ngraph2 = GraphFrame(nodos_juntos, edges_juntos).cache()\nz.show(graph2)\n",
+      "text": "%pyspark\nfrom pyspark.sql.functions import expr\n\ntriangulos_dirigidos = graph.find(\"(a)-[e]->(b); (b)-[e2]->(c); (c)-[e3]->(a)\").filter((col(\"a\") != col(\"b\")) & (col(\"b\") != col(\"c\")) & (col(\"c\") != col(\"a\")))\n\nnodos_a = triangulos_dirigidos.select(expr(\"a.id\"))\nnodos_b = triangulos_dirigidos.select(expr(\"b.id\"))\nnodos_c = triangulos_dirigidos.select(expr(\"c.id\"))\n\nnodos_juntos = nodos_a.union(nodos_b).union(nodos_c).distinct()\n\nnodos_juntos.select(\"*\", col(\"id\").alias(\"Label\")).coalesce(1) \\\n        .write \\\n        .csv(\"top_influencers_FINAL.csv\", mode=\"overwrite\", header=True)\n\ne_ = triangulos_dirigidos.select(\"e.src\", \"e.dst\")\ne2_ = triangulos_dirigidos.select(\"e2.src\", \"e2.dst\")\ne3_ = triangulos_dirigidos.select(\"e3.src\", \"e3.dst\")\n\nedges_juntos = e_.union(e2_).union(e3_).distinct()\n\nedges_juntos.coalesce(1) \\\n        .write \\\n        .csv(\"top_edges_FINAL.csv\", mode=\"overwrite\", header=True)\n\ngraph2 = GraphFrame(nodos_juntos, edges_juntos).cache()\nz.show(graph2)",
       "user": "anonymous",
-      "dateUpdated": "2022-11-16T18:43:06-0300",
+      "dateUpdated": "2022-11-17T17:24:18-0300",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -2899,20 +2879,38 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "GraphFrame(v:[id: struct<id: string>], e:[src: string, dst: string])\n"
+            "data": "GraphFrame(v:[id: string], e:[src: string, dst: string])\n"
           }
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=117",
+              "$$hashKey": "object:22600"
+            },
+            {
+              "jobUrl": "http://192.168.100.19:4040/jobs/job?id=118",
+              "$$hashKey": "object:22601"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1668562509842_935300377",
       "id": "paragraph_1668562509842_935300377",
       "dateCreated": "2022-11-15T22:35:09-0300",
-      "dateStarted": "2022-11-16T18:43:06-0300",
-      "dateFinished": "2022-11-16T18:43:07-0300",
+      "dateStarted": "2022-11-17T17:24:18-0300",
+      "dateFinished": "2022-11-17T17:24:19-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:554"
+      "$$hashKey": "object:590"
     },
     {
       "text": "%pyspark\n\nverticesCount = graph2.vertices.count()\n\nedgesCount = graph2.edges.count()\n\nprint(f\"\"\"%table\nCantidad de usuarios \\t Cantidad de conecciones\n{verticesCount} \\t {edgesCount}\"\"\")\n",
@@ -2965,6 +2963,15 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "Cantidad de usuarios \t Cantidad de conecciones\n415 \t 1006\n"
+          }
+        ]
+      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -2975,31 +2982,31 @@
           "values": [
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=118",
-              "$$hashKey": "object:27063"
+              "$$hashKey": "object:3985"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=119",
-              "$$hashKey": "object:27064"
+              "$$hashKey": "object:3986"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=120",
-              "$$hashKey": "object:27065"
+              "$$hashKey": "object:3987"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=121",
-              "$$hashKey": "object:27066"
+              "$$hashKey": "object:3988"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=122",
-              "$$hashKey": "object:27067"
+              "$$hashKey": "object:3989"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=123",
-              "$$hashKey": "object:27068"
+              "$$hashKey": "object:3990"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=124",
-              "$$hashKey": "object:27069"
+              "$$hashKey": "object:3991"
             }
           ],
           "interpreterSettingId": "spark"
@@ -3009,20 +3016,10 @@
       "jobName": "paragraph_1668634418859_733765398",
       "id": "paragraph_1668634418859_733765398",
       "dateCreated": "2022-11-16T18:33:38-0300",
-      "status": "FINISHED",
-      "focus": true,
-      "$$hashKey": "object:24369",
-      "dateFinished": "2022-11-16T18:43:21-0300",
       "dateStarted": "2022-11-16T18:43:14-0300",
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TABLE",
-            "data": "Cantidad de usuarios \t Cantidad de conecciones\n415 \t 1006\n"
-          }
-        ]
-      }
+      "dateFinished": "2022-11-16T18:43:21-0300",
+      "status": "FINISHED",
+      "$$hashKey": "object:591"
     },
     {
       "text": "%pyspark\ntres_vertices_distintos = graph.triangleCount().show()",
@@ -3065,31 +3062,31 @@
           "values": [
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=173",
-              "$$hashKey": "object:3920"
+              "$$hashKey": "object:4061"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=174",
-              "$$hashKey": "object:3921"
+              "$$hashKey": "object:4062"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=175",
-              "$$hashKey": "object:3922"
+              "$$hashKey": "object:4063"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=176",
-              "$$hashKey": "object:3923"
+              "$$hashKey": "object:4064"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=177",
-              "$$hashKey": "object:3924"
+              "$$hashKey": "object:4065"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=178",
-              "$$hashKey": "object:3925"
+              "$$hashKey": "object:4066"
             },
             {
               "jobUrl": "http://192.168.100.19:4040/jobs/job?id=179",
-              "$$hashKey": "object:3926"
+              "$$hashKey": "object:4067"
             }
           ],
           "interpreterSettingId": "spark"
@@ -3102,7 +3099,7 @@
       "dateStarted": "2022-11-15T23:26:43-0300",
       "dateFinished": "2022-11-15T23:27:04-0300",
       "status": "FINISHED",
-      "$$hashKey": "object:555"
+      "$$hashKey": "object:592"
     },
     {
       "title": "FIN",
@@ -3147,7 +3144,7 @@
       "id": "20171010-191336_1667301043",
       "dateCreated": "2022-11-15T20:55:48-0300",
       "status": "READY",
-      "$$hashKey": "object:556"
+      "$$hashKey": "object:593"
     }
   ],
   "name": "Clase 07 - Grandes Grafos Sociales",
